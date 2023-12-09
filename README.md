@@ -79,6 +79,10 @@ Agora posso instalar o helm usando:
 ```bash
 helm install trabalho-final ./helm-chart
 ```
+Para testar o hpa posso usar o comando do kubectl e usando o nome do meu hpa (posso ver o nome usando o `kubectl get hpa`)
+```bash
+kubectl describe hpa trabalho-final-hpa
+```
 
 Para ver o valor do config map posso usar o comando do kubectl e usando o nome do meu config map (posso ver o nome usando o `kubectl get configmap`)
 ```bash
