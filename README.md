@@ -85,6 +85,11 @@ Para ver o valor do config map posso usar o comando do kubectl e usando o nome d
 kubectl describe configmap trabalho-final-configmap
 ```
 
+Para ver o valor do secrets posso usar o comando do kubectl e usando o nome do meu secrets (posso ver o nome usando o `kubectl get secrets`)
+```bash
+kubectl describe secret meu-secret
+```
+
 Para testar a aplicação uso o comando `kubectl get pods` e encontro o nome do meu pod, então faço o port forward usando:
 ```bash
 kubectl port-forward <nome-pod> 3000:3000
