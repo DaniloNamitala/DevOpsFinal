@@ -74,6 +74,16 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
+# ConfigMap
+config:
+  enabled: true
+
+
+# Secret
+secret:
+  enabled: true
+
+  
 # Additional volumes on the output Deployment definition.
 volumes: []
 # - name: foo
